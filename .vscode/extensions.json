@@ -1,3 +1,6 @@
 {
-  "recommendations": ["csstools.postcss"]
+  "recommendations": [
+    "csstools.postcss",
+    "vunguyentuan.vscode-postcss"
+  ]
 }

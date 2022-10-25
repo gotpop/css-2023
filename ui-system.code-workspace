@@ -11,5 +11,10 @@
     "spellchecker.ignoreFileExtensions": ["*.stylelintrc"],
     "css.format.enable": false,
     "css.validate": false
+  },
+  "extensions": {
+    "recommendations": [
+      "vunguyentuan.vscode-postcss"
+    ]
   }
 }
