@@ -54,6 +54,7 @@ export default function Home() {
     <div className="h-screen w-full flex flex-col space-y-4 items-center justify-center bg-gradient-to-r from-cyan-500 to-blue-500">
       <h1 className="text-6xl text-white font-semibold">Radix UI + Tailwind CSS</h1>
       <Link href={"https://github.com/gotpop/ui-system"}>GitHub</Link>
+      <Link href={"http://localhost:3000"}>LocalHost</Link>
       <h1 className="text-4xl text-white font-semibold">Click me!</h1>
 
       <DropdownMenu.Root>
