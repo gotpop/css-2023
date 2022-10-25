@@ -1,3 +1,87 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  --main-bg-color: #EEE;
+  --yellow: yellow;
+  --aqua: aquamarine;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--yellow);
+}
+
+.header {
+  background: var(--yellow);
+  padding: 2rem;
+  display: flex;
+}
+
+.footer {
+  background: var(--yellow);
+  padding: 2rem;
+  display: flex;
+}
+
+.main {
+  background: var(--yellow);
+  padding: 2rem;
+  display: flex;
+  min-height: 100vh;
+}
+
+@custom-media --modern (color), (hover);
+
+@media (--modern) and (width > 1024px) {
+  .a {
+    color: var(--yellow);
+  }
+}
+
+.foo {
+  color: var(--yellow);
+  display: grid;
+
+  @media (orientation: landscape) {
+    grid-auto-flow: column;
+  }
+
+  @nest .parent & {
+    color: var(--yellow);
+  }
+}
+
+.foo2 {
+  color: var(--yellow);
+
+  & > .bar {
+    color: red;
+  }
+}
+
+.mad {
+  padding: 2rem;
+  background: var(--yellow);
+}
+
+.mad2 {
+  container-type: inline-size;
+}
+
+@container (max-width: 700px) {
+  .footer {
+    background: var(--yellow);
+  }
+}
+
+@container (min-width: 500px) {
+  .header {
+    background: var(--yellow);
+  }
+}
+
+@container (min-width: 700px) {
+  .mad {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}

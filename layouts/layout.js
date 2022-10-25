@@ -1,0 +1,24 @@
+import React from 'react'
+import Head from 'next/head'
+import NavBar from '@components/navbar'
+import Footer from '@components/footer'
+
+export default function Layout(props) {
+  const { children } = props;
+
+  return (
+    <>
+      <Head>
+        <title>NextJS Demo</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div>
+        <NavBar />
+        <main className='main'>
+          {children}
+        </main>
+        <Footer />
+      </div>
+    </>
+  );
+}
