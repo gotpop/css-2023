@@ -1,0 +1,5 @@
+.footer {
+  background: var(--aqua);
+  padding: 2rem;
+  display: flex;
+}

@@ -9,16 +9,12 @@ import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import Link from 'next/link'
 
 import type { NextPage } from 'next'
-import BasicCard from '../components/card'
 import Layout from '@layouts/layout'
-import { pages } from '@content/pages'
-import Intro from '@components/intro'
-
-import { introContent } from '@content/intro'
+import Intro from '@components/Intro/intro'
 
 function RightSlot({ children }) {
   return (
-    <div className="ml-auto pl-4 text-gray-500 group-hover:text-gray-200">
+    <div className="pl-4 ml-auto text-gray-500 group-hover:text-gray-200">
       {children}
     </div>
   )
@@ -41,7 +37,7 @@ function DropdownMenuCheckboxItem({ children, ...props }) {
   return (
     <DropdownMenu.CheckboxItem
       {...props}
-      className="group bg-white hover:bg-gray-700 hover:text-gray-200 text-xs rounded flex items-center h-6 px-1 pl-6 relative select-none">
+      className="relative flex items-center h-6 px-1 pl-6 text-xs bg-white rounded select-none group hover:bg-gray-700 hover:text-gray-200">
       {children}
     </DropdownMenu.CheckboxItem>
   )
@@ -51,7 +47,7 @@ function DropdownMenuItemIndicator({ children, ...props }) {
   return (
     <DropdownMenu.ItemIndicator
       {...props}
-      className="absolute left-0 w-6 inline-flex items-center justify-center">
+      className="absolute left-0 inline-flex items-center justify-center w-6">
       {children}
     </DropdownMenu.ItemIndicator>
   )
@@ -71,7 +67,7 @@ function DropdownMenuRadioItem({
   return (
     <DropdownMenu.RadioItem
       {...props}
-      className="bg-white hover:bg-gray-700 hover:text-gray-200 text-xs rounded flex items-center h-6 px-1 pl-6 relative select-none">
+      className="relative flex items-center h-6 px-1 pl-6 text-xs bg-white rounded select-none hover:bg-gray-700 hover:text-gray-200">
       {children}
     </DropdownMenu.RadioItem>
   )
@@ -83,30 +79,30 @@ export default function Home() {
   const [person, setPerson] = useState('pedro')
   return (
     <Layout>
-      <Intro content={introContent} />
+      {/* <Intro content={introContent} /> */}
 
-      <div className="h-screen w-full flex flex-col space-y-4 items-center justify-center bg-gradient-to-r from-cyan-500 to-blue-500">
-        <h1 className="text-6xl text-white font-semibold">
-          Radix UI + Tailwind CSS
+      <div className="flex flex-col items-center justify-center w-full h-screen space-y-4 bg-gradient-to-r from-cyan-500 to-blue-500">
+        <h1 className="text-6xl font-semibold text-white">
+          Radix UI 
         </h1>
         <Link href={'https://github.com/gotpop/ui-system'}>GitHub</Link>
         <Link href={'http://localhost:3000'}>LocalHost</Link>
-        <h1 className="text-4xl text-white font-semibold">Click me!</h1>
+        <h1 className="text-4xl font-semibold text-white">Click me!</h1>
 
         <DropdownMenu.Root>
           <DropdownMenu.Trigger
             asChild
-            className="bg-white text-xs rounded-3xl flex items-center h-8 px-2 relative select-none">
+            className="relative flex items-center h-8 px-2 text-xs bg-white select-none rounded-3xl">
             <button
               aria-label="Customise options"
-              className="h-8 w-8 inline-flex items-center justify-center shadow-lg">
+              className="inline-flex items-center justify-center w-8 h-8 shadow-lg">
               <HamburgerMenuIcon />
             </button>
           </DropdownMenu.Trigger>
 
           <DropdownMenu.Content
             sideOffset={5}
-            className="bg-white rounded p-1 shadow-lg">
+            className="p-1 bg-white rounded shadow-lg">
             <DropdownMenuItem>
               New Tab <RightSlot>⌘+T</RightSlot>
             </DropdownMenuItem>
@@ -117,7 +113,7 @@ export default function Home() {
               New Private Window <RightSlot>⇧+⌘+N</RightSlot>
             </DropdownMenuItem>
             <DropdownMenu.Sub>
-              <DropdownMenu.SubTrigger className="group bg-white hover:bg-gray-700 hover:text-gray-200 hover:border-0 text-xs rounded flex items-center h-6 px-1 pl-6 relative select-none">
+              <DropdownMenu.SubTrigger className="relative flex items-center h-6 px-1 pl-6 text-xs bg-white rounded select-none group hover:bg-gray-700 hover:text-gray-200 hover:border-0">
                 More Tools
                 <RightSlot>
                   <ChevronRightIcon />
@@ -126,7 +122,7 @@ export default function Home() {
               <DropdownMenu.SubContent
                 sideOffset={2}
                 alignOffset={-5}
-                className="bg-white rounded p-1 shadow-lg">
+                className="p-1 bg-white rounded shadow-lg">
                 <DropdownMenuItem>
                   Save Page As… <RightSlot>⌘+S</RightSlot>
                 </DropdownMenuItem>
@@ -154,7 +150,7 @@ export default function Home() {
               Show Full URLs
             </DropdownMenuCheckboxItem>
             <Separator />
-            <DropdownMenu.Label className="pl-6 leading-6 text-xs text-gray-700">
+            <DropdownMenu.Label className="pl-6 text-xs leading-6 text-gray-700">
               Contributors
             </DropdownMenu.Label>
 

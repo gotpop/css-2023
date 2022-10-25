@@ -1,10 +1,10 @@
 import * as React from 'react'
+import styles from './Header.module.css'
 
 export default function NavBar({ content }) {
-  //   const { title, text } = content
 
   return (
-    <header className="header">
+    <header className={styles.header}>
       <h1>Header</h1>
     </header>
   )

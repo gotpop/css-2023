@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
-import NavBar from '@components/navbar'
-import Footer from '@components/footer'
+import Header from '@components/Header'
+import Footer from '@components/Footer'
 
 export default function Layout(props) {
   const { children } = props;
@@ -13,7 +13,7 @@ export default function Layout(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <NavBar />
+        <Header />
         <main className='main'>
           {children}
         </main>
