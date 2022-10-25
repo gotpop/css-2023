@@ -82,11 +82,9 @@ export default function Home() {
       {/* <Intro content={introContent} /> */}
 
       <div className="flex flex-col items-center justify-center w-full h-screen space-y-4 bg-gradient-to-r from-cyan-500 to-blue-500">
-        <h1 className="text-6xl font-semibold text-white">
-          Radix UI 
-        </h1>
-        <Link href={'https://github.com/gotpop/ui-system'}>GitHub</Link>
-        <Link href={'http://localhost:3000'}>LocalHost</Link>
+        <h1 className="text-6xl font-semibold text-white">Radix UI</h1>
+        {/* <Link href={'https://github.com/gotpop/ui-system'}>GitHub</Link>
+        <Link href={'http://localhost:3000'}>LocalHost</Link> */}
         <h1 className="text-4xl font-semibold text-white">Click me!</h1>
 
         <DropdownMenu.Root>
