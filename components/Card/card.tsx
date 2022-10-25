@@ -1,8 +1,13 @@
 import * as React from 'react'
-import NextLink from 'next/link'
+import styles from './Card.module.css'
 
-export default function BasicCard({ page }) {
-  const { name, href, description } = page
+export default function Card({ content }) {
+  const { title, text } = content
 
-  return <></>
+  return (
+    <article className={styles.card}>
+      <h1>{title}</h1>
+      <p>{text}</p>
+    </article>
+  )
 }
