@@ -12,13 +12,11 @@ export default function Layout(props) {
         <title>NextJS Demo</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <Header />
-        <main className='main'>
-          {children}
-        </main>
-        <Footer />
-      </div>
+      <Header />
+      <main className='main'>
+        {children}
+      </main>
+      <Footer />
     </>
   );
 }
