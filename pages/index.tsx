@@ -2,9 +2,9 @@ import { useState } from 'react'
 import Link from 'next/link'
 import type { NextPage } from 'next'
 import Layout from '@layouts/layout'
-import Intro from '@components/Intro/intro'
+import Intro from '@components/Intro'
 import { cards } from '@content/cards'
-import Card from '@components/Card/card'
+import Card from '@components/Card'
 
 export default function Home() {
   const [bookmarksChecked, setBookmarksChecked] = useState(true)

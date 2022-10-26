@@ -1,3 +1,4 @@
+/* stylelint-disable string-quotes */
 .main {
   background: var(--pink);
   padding: 2rem;
@@ -6,21 +7,28 @@
   /* grid-template-rows: 1fr 3fr 1fr 3fr; */
   grid-gap: 1rem;
   grid-template-columns: repeat(2, minmax(60px, auto));
+  /* container-type: inline-size; */
+
+  container-type: inline-size;
+  /* container-name: card; */
   
   @media (--phone) {
     grid-template-columns: repeat(1, minmax(60px, auto));
   }
 }
 
-.foo {
-  color: var(--yellow);
+.layout {
   display: grid;
-  
-  & > .bar {
-    color: red;
-  }
+}
 
-  @nest .parent & {
-    color: var(--yellow);
+@media (--ipad) {
+  .layout {
+    grid-template-rows: 4rem 1fr auto;
+    grid-template-columns: 25% 1fr;
+    /* stylelint-disable-next-line declaration-colon-space-after */
+    grid-template-areas: 
+      'header header'
+      'sidebar main'
+      'footer footer';
   }
 }
