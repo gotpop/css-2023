@@ -5,11 +5,9 @@ export default function Intro({ content }) {
   const { title, text } = content
 
   return (
-  <section className={styles.intro}>
-    <h2>Hello</h2>
-    <p>Text</p>
-  </section>
+    <section className={styles.intro}>
+      <h2>Hello</h2>
+      <p>Text</p>
+    </section>
   )
 }
-
-

@@ -1,9 +1,3 @@
-// import CardImport from './Card'
-
-// const Card =  CardImport
-
-// export default Card
-
 import * as React from 'react'
 import styles from './Card.module.css'
 
