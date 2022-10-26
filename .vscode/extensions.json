@@ -1,6 +1,3 @@
 {
-  "recommendations": [
-    "csstools.postcss",
-    "vunguyentuan.vscode-postcss"
-  ]
+  "recommendations": ["vunguyentuan.vscode-css-variables", "ricard.postcss"]
 }

@@ -2,9 +2,8 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "postcss.validate": false,
+  "editor.formatOnSave": true,
   "emmet.includeLanguages": {
     "postcss": "css"
-  },
-  "editor.formatOnSave": false
+  }
 }

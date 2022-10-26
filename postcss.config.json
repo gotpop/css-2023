@@ -1,7 +1,6 @@
 {
     "plugins": [
         "stylelint",
-        "postcss-nesting",
         [
             "postcss-preset-env",
             {
