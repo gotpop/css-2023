@@ -3,3 +3,10 @@
   padding: 2rem;
   display: flex;
 }
+
+.nav {
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
+  color: var(--main-bg-color);
+}
