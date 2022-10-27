@@ -6,7 +6,7 @@
 
 .nav {
   display: flex;
-  padding: 1rem;
-  margin: 1rem;
-  color: var(--main-bg-color);
+  padding: var(--padding);
+  margin: 0 1rem;
+  color: var(--greyDark);
 }
