@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { useContext, useEffect, useRef } from 'react'
 import styles from './SelectMenu.module.css'
-
 import ColumnContext from '@context/ColumnsContext'
 
 declare global {
@@ -17,15 +16,13 @@ declare global {
 
 export default function SelectMenu() {
   const selectMenu = useRef(null)
-  const { weSetState } = useContext(ColumnContext)
-  const cb = e => weSetState({ columns: e.target.value })
+  const { goSetColumns } = useContext(ColumnContext)
+  const cb = e => goSetColumns({ columns: e.target.value })
 
   useEffect(() => {
     selectMenu.current.addEventListener('change', cb)
 
-    return () => {
-      selectMenu.current.removeEventListener('custom-input', cb)
-    }
+    return () => selectMenu.current.removeEventListener('change', cb)
   })
 
   return (

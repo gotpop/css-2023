@@ -6,7 +6,7 @@ import ColumnContext from '@context/ColumnsContext'
 import { useContext } from 'react'
 
 export default function Layout(props) {
-  const { columns } = useContext(ColumnContext)
+  const { layout } = useContext(ColumnContext)
   const { children } = props;
 
   return (
@@ -16,7 +16,7 @@ export default function Layout(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className='main' style={{ gridTemplateColumns: `repeat(${columns.columns}, 1fr)` }}>
+      <main className='main' style={{ gridTemplateColumns: `repeat(${layout.columns}, 1fr)` }}>
         {children}
       </main>
       <Footer />

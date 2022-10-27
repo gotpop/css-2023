@@ -5,13 +5,13 @@ import ColumnContext from '@context/ColumnsContext'
 import { useContext } from 'react'
 
 export default function Intro({ content }) {
-  const { columns } = useContext(ColumnContext)
+  const { layout } = useContext(ColumnContext)
   const { title, text } = content
 
   return (
     <section
       className={styles.intro}
-      style={{ gridColumn: `span ${columns.columns}` }}>
+      style={{ gridColumn: `span ${layout.columns}` }}>
       <h2>{title}</h2>
       <p>{text}</p>
       <SelectMenu />
