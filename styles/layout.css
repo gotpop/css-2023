@@ -1,9 +1,9 @@
 .main {
   background: var(--pink);
-  padding: 2rem;
+  padding: var(--padding);
   min-height: 100vh;
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: calc(var(--padding) / 2);
   container-type: inline-size;
   grid-template-rows: auto 1fr 1fr;
 
