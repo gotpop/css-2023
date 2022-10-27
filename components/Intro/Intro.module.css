@@ -10,5 +10,6 @@
 
   & p {
     margin: 0 0 var(--textPadB) 0;
+    display: inline-flex;
   }
 }
