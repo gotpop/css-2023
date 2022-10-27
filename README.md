@@ -1,6 +1,6 @@
 # Components 📰
 
-A demo of the upcoming `subgrid` property of CSS Grid level 2.
+An @container query & Next.js based component system. Uses draft CSS properties so should only be viewed in Chrome Canary with "Experimental Web Platform" flag enabled.
 
 ## Live example
 
