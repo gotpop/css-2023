@@ -1,6 +1,6 @@
 .footer {
   background: var(--aqua);
-  padding: 2rem;
+  padding: var(--padding);
   display: flex;
   justify-content: center;
   align-items: center;

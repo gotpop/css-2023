@@ -8,12 +8,10 @@ export default function NavBar({ content }) {
       <Link href="/">
         <h1>Header</h1>
       </Link>
-      <a className={styles.nav} href="https://github.com/gotpop/ui-system">
-        GitHub
-      </a>
-      <a className={styles.nav} href="http://localhost:3000">
-        LocalHost
-      </a>
+      <nav className={styles.nav}>
+        <a href="https://github.com/gotpop/ui-system">GitHub</a>
+        <a href="http://localhost:3000">LocalHost</a>
+      </nav>
     </header>
   )
 }

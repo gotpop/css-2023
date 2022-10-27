@@ -1,12 +1,18 @@
 .header {
   background: var(--aqua);
-  padding: 2rem;
+  padding: var(--padding);
   display: flex;
+  justify-content: space-between;
 }
 
 .nav {
   display: flex;
   padding: var(--padding);
-  margin: 0 1rem;
+  margin: 0 0 0 calc(var(--padding) / 2);
   color: var(--greyDark);
+
+  & a {
+    display: inline-flex;
+    margin: 0 0 0 calc(var(--padding) / 2);
+  }
 }
