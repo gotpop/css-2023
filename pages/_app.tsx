@@ -1,5 +1,5 @@
 import '../styles/app.css'
-import { ColumnProvider } from '../ColumnsContext'
+import { ColumnProvider } from '@context/ColumnsContext'
 
 export default function MyApp({ Component, pageProps }) {
   return (

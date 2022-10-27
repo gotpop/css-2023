@@ -2,7 +2,7 @@ import * as React from 'react'
 import { useContext, useEffect, useRef } from 'react'
 import styles from './SelectMenu.module.css'
 
-import ColumnContext from '../../ColumnsContext'
+import ColumnContext from '@context/ColumnsContext'
 
 declare global {
   namespace JSX {

@@ -19,6 +19,7 @@
       "@layouts/*": ["./layouts/*"],
       "@utils/*": ["./utils/*"],
       "@types/*": ["./types/*"],
+      "@context/*": ["./context/*"],
       "@components/*": ["./components/*"]
     }
   },

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import * as React from 'react'
 import { useContext } from 'react'
 import styles from './Header.module.css'
-import ColumnContext from '../../ColumnsContext'
+import ColumnContext from '@context/ColumnsContext'
 
 export default function NavBar({ content }) {
   const { columns } = useContext(ColumnContext)
