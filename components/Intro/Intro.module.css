@@ -1,5 +1,14 @@
 .intro {
   background: var(--aqua);
-  padding: 2rem;
+  padding: var(--padding);
   display: flex;
+  flex-direction: column;
+
+  & h2 {
+    margin: 0 0 var(--textPadB) 0;
+  }
+
+  & p {
+    margin: 0 0 var(--textPadB) 0;
+  }
 }

@@ -5,6 +5,7 @@
   display: grid;
   grid-gap: 1rem;
   container-type: inline-size;
+  grid-template-rows: auto 1fr 1fr;
 
   @media (--phone) {
     grid-template-columns: repeat(1, minmax(60px, auto));
