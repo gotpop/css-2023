@@ -1,6 +1,8 @@
 import * as React from 'react'
-import { useEffect, useRef } from 'react'
+import { useContext, useEffect, useRef } from 'react'
 import styles from './SelectMenu.module.css'
+
+import ColumnContext from '../../ColumnsContext'
 
 declare global {
   namespace JSX {
@@ -13,8 +15,10 @@ declare global {
   }
 }
 
-export default function SelectMenu({ cb }) {
+export default function SelectMenu() {
   const selectMenu = useRef(null)
+  const { weSetState } = useContext(ColumnContext)
+  const cb = e => weSetState({ columns: e.target.value })
 
   useEffect(() => {
     selectMenu.current.addEventListener('change', cb)

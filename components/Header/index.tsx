@@ -1,12 +1,12 @@
 import SelectMenu from '@components/SelectMenu'
 import Link from 'next/link'
 import * as React from 'react'
-import { useState } from 'react'
+import { useContext } from 'react'
 import styles from './Header.module.css'
+import ColumnContext from '../../ColumnsContext'
 
 export default function NavBar({ content }) {
-  const [value, setValue] = useState(1)
-  const cb = e => setValue(e.target.value)
+  const { columns } = useContext(ColumnContext)
 
   return (
     <>
@@ -21,10 +21,8 @@ export default function NavBar({ content }) {
         </a>
 
         <div>
-          <h1>{value}</h1>
+          <h1>Value: {columns.columns}</h1>
         </div>
-
-        <SelectMenu cb={cb} />
       </header>
     </>
   )
