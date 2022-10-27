@@ -1,11 +1,11 @@
 .main {
   background: var(--pink);
-  padding: var(--padding);
-  min-height: 100vh;
+  container-type: inline-size;
   display: grid;
   grid-gap: calc(var(--padding) / 2);
-  container-type: inline-size;
   grid-template-rows: auto 1fr 1fr;
+  min-height: 100vh;
+  padding: var(--padding);
 
   @media (--phone) {
     grid-template-columns: repeat(1, minmax(60px, auto));
