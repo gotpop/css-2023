@@ -13,7 +13,7 @@ export default function Layout(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className='main'>
+      <main className='main' style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
         {children}
       </main>
       <Footer />

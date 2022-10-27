@@ -1,0 +1,13 @@
+.menu::part(button) {
+  color: var(--greyDark);
+  background-color: var(--white);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.menu::part(listbox) {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+}
