@@ -7,8 +7,8 @@ declare global {
   namespace JSX {
     interface IntrinsicElements {
       selectmenu: React.DetailedHTMLProps<
-        React.HTMLAttributes<HTMLElement>,
-        HTMLElement
+        React.HTMLAttributes<HTMLSelectElement>,
+        HTMLSelectElement
       >
     }
   }
@@ -27,7 +27,13 @@ export default function SelectMenu() {
 
   return (
     <div>
-      <selectmenu ref={selectMenu} className={styles.menu}>
+      <selectmenu
+        ref={selectMenu}
+        className={styles.menu}
+        defaultValue={'DEFAULT'}>
+        <option value="DEFAULT" disabled style={{ display: 'none' }}>
+          Choose number of columns ...
+        </option>
         <option value="1">1 Column</option>
         <option value="2">2 Columns</option>
         <option value="3">3 Columns</option>

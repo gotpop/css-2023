@@ -1,15 +1,16 @@
 .intro {
-  background: var(--aqua);
-  padding: var(--padding);
+  --local-bg: var(--hwb-grape-5);
+  background: var(--local-bg);
+  color: color-contrast(var(--local-bg) vs black, white);
   display: flex;
   flex-direction: column;
+  padding: var(--padding);
 
   & h2 {
-    margin: 0 0 var(--textPadB) 0;
+    margin: 0 0 var(--textMB) 0;
   }
 
   & p {
-    margin: 0 0 var(--textPadB) 0;
-    display: inline-flex;
+    margin: 0 0 var(--textMB) 0;
   }
 }

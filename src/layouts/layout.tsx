@@ -16,11 +16,13 @@ export default function Layout(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main
-        className="main"
-        style={{ gridTemplateColumns: `repeat(${layout.columns}, 1fr)` }}>
-        {children}
-      </main>
+      <section className="site">
+        <main
+          className="main"
+          style={{ gridTemplateColumns: `repeat(${layout.columns}, 1fr)` }}>
+          {children}
+        </main>
+      </section>
       <Footer />
     </>
   )

@@ -1,11 +1,19 @@
 :root {
-  --main-bg-color: #eee;
-  --greyLight: #eeeeee;
-  --greyDark: #3d3d3d;
-  --yellow: yellow;
-  --aqua: aquamarine;
+  --black: white;
   --white: white;
-  --pink: pink;
+
+  --hwb-grey-1: hwb(0 100% 0%);
+  --hwb-grey-2: hwb(0 60% 0%);
+  --hwb-grey-3: hwb(0 40% 0%);
+  --hwb-grey-4: hwb(0 20% 25%);
+  --hwb-grey-5: hwb(0 0% 50%);
+
+  --hwb-grape-1: hwb(283 75% 0%);
+  --hwb-grape-2: hwb(283 50% 25%);
+  --hwb-grape-3: hwb(283 25% 50%);
+  --hwb-grape-4: hwb(283 0% 75%);
+  --hwb-grape-5: hwb(283 0% 90%);
+
   --padding: 2rem;
-  --textPadB: 1rem;
+  --textMB: 1rem;
 }

@@ -1,15 +1,17 @@
 .header {
-  background: var(--aqua);
-  padding: var(--padding);
+  --local-bg: var(--hwb-grape-4);
+  background: var(--local-bg);
+  color: color-contrast(var(--local-bg) vs black, white);
   display: flex;
   justify-content: space-between;
+  padding: var(--padding);
+  position: sticky;
 }
 
 .nav {
   display: flex;
   padding: var(--padding);
   margin: 0 0 0 calc(var(--padding) / 2);
-  color: var(--greyDark);
 
   & a {
     display: inline-flex;

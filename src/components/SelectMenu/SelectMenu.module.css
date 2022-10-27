@@ -1,5 +1,5 @@
 .menu::part(button) {
-  color: var(--greyDark);
+  color: var(--hwb-grape-4);
   background-color: var(--white);
   padding: 15px;
   border-radius: 5px;

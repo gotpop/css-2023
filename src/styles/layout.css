@@ -1,5 +1,5 @@
 .main {
-  background: var(--pink);
+  background: var(--hwb-grey-1);
   container-type: inline-size;
   display: grid;
   grid-gap: calc(var(--padding) / 2);
@@ -10,4 +10,10 @@
   @media (--phone) {
     grid-template-columns: repeat(1, minmax(60px, auto));
   }
+}
+
+.site {
+  display: grid;
+  grid-template-columns: minmax(300px, 1000px);
+  place-content: center;
 }

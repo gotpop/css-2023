@@ -1,20 +1,26 @@
 .card {
-  background: var(--white);
-  padding: var(--padding);
+  --local-bg: var(--hwb-grape-2);
+  background: var(--local-bg);
+  color: color-contrast(var(--local-bg) vs black, white);
   display: flex;
   flex-direction: column;
+  padding: var(--padding);
 
   & h1 {
-    color: red;
+    margin: 0 0 var(--textMB) 0;
   }
 
-  @container (min-width: 600px) {
-    background: var(--aqua);
+  & p {
+    margin: 0 0 var(--textMB) 0;
   }
+
+  /* @container (min-width: 600px) {
+    background: var(--aqua);
+  } */
 }
 
-p {
+/* p {
   @nest .card & {
     color: var(--yellow);
   }
-}
+} */

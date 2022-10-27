@@ -1,7 +1,8 @@
 .footer {
-  background: var(--aqua);
-  padding: var(--padding);
+  --local-bg: var(--hwb-grape-4);
+  background: var(--local-bg);
+  color: color-contrast(var(--local-bg) vs black, white);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: var(--padding);
+  place-content: center;
 }
