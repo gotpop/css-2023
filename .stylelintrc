@@ -2,7 +2,7 @@
     "extends": "stylelint-config-recommended",
     "rules": {
         "color-hex-case": "lower",
-        "max-nesting-depth": 3,
+        "max-nesting-depth": 4,
         "property-no-vendor-prefix": true,
         "max-empty-lines": 1,
         "indentation": 2,
