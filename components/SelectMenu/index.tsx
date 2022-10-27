@@ -29,8 +29,8 @@ export default function SelectMenu() {
     <div>
       <selectmenu ref={selectMenu} className={styles.menu}>
         <option value="1">1 Column</option>
-        <option value="2">2 Column</option>
-        <option value="3">3 Column</option>
+        <option value="2">2 Columns</option>
+        <option value="3">3 Columns</option>
       </selectmenu>
     </div>
   )
