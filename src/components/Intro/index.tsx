@@ -1,7 +1,7 @@
-import SelectMenu from '@components/SelectMenu'
+import SelectMenu from '../SelectMenu'
 import * as React from 'react'
 import styles from './Intro.module.css'
-import ColumnContext from '@context/ColumnsContext'
+import ColumnContext from '../../context/ColumnsContext'
 import { useContext } from 'react'
 
 export default function Intro({ content }) {
