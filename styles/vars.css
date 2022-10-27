@@ -1,5 +1,7 @@
 :root {
-  --main-bg-color: #EEE;
+  --main-bg-color: #eee;
+  --greyLight: #eeeeee;
+  --greyDark: #3d3d3d;
   --yellow: yellow;
   --aqua: aquamarine;
   --white: white;
