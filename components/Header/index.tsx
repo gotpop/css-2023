@@ -1,7 +1,7 @@
 import SelectMenu from '@components/SelectMenu'
 import Link from 'next/link'
 import * as React from 'react'
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
 import styles from './Header.module.css'
 
 export default function NavBar({ content }) {
