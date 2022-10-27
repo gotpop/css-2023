@@ -12,8 +12,8 @@ export default function Intro({ content }) {
     <section
       className={styles.intro}
       style={{ gridColumn: `span ${columns.columns}` }}>
-      <h2>Hello</h2>
-      <p>Text</p>
+      <h2>{title}</h2>
+      <p>{text}</p>
       <SelectMenu />
     </section>
   )
