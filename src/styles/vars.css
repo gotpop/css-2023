@@ -15,6 +15,7 @@
   --hwb-grape-5: hwb(283 0% 90%);
 
   --grid-columns: 2;
+  --span-columns: 2;
 
   --padding: 2rem;
   --textMB: 1rem;
