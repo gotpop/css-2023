@@ -15,10 +15,8 @@
   & p {
     margin: 0 0 var(--textMB) 0;
   }
-}
 
-@media (--ipad) {
-  .intro {
+  @media (--ipad) {
     grid-column: span var(--span-columns);
   }
 }
