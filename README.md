@@ -1,8 +1,5 @@
 <h1 align="center">
-	<br>
 	<img width="100%" src="./public/container-query.jpg" alt="Container Query">
-	<br>
-    <br>
 </h1>
 
 # 2023 CSS Components 📰
