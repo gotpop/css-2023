@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useContext, useEffect, useRef } from 'react'
-import styles from './SelectMenu.module.css'
+import styles from './SelectMenu2.module.css'
 import ColumnContext from '../../context/ColumnsContext'
 
 declare global {
@@ -14,16 +14,16 @@ declare global {
   }
 }
 
-export default function SelectMenu() {
+export default function SelectMenu2({ customProperty }) {
   const selectMenu = useRef(null)
-  const { goSetColumns } = useContext(ColumnContext)
-  const cb = e => goSetColumns({ columns: e.target.value })
+  const cb = e =>
+    document.documentElement.style.setProperty(customProperty, e.target.value)
 
   useEffect(() => {
     selectMenu.current.addEventListener('change', cb)
 
     return () => selectMenu.current.removeEventListener('change', cb)
-  })
+  }, [])
 
   return (
     <div>
@@ -32,7 +32,7 @@ export default function SelectMenu() {
         className={styles.menu}
         defaultValue={'DEFAULT'}>
         <option value="DEFAULT" disabled style={{ display: 'none' }}>
-          Choose number of columns ...
+          Choose number of grid columns ...
         </option>
         <option value="1">1 Column</option>
         <option value="2">2 Columns</option>

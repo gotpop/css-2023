@@ -13,7 +13,7 @@ export default function Home() {
     <Layout>
       <Intro content={introContent} />
       {cards.map(card => (
-        <Card key={card.title} content={card} />
+        <Card key={card.id} content={card} />
       ))}
     </Layout>
   )
