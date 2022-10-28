@@ -2,7 +2,7 @@
   --local-bg: var(--hwb-grape-4);
   align-items: center;
   background: var(--local-bg);
-  color: color-contrast(var(--local-bg) vs black, white);
+  color: color-contrast(var(--local-bg) vs var(--black), var(--white));
   display: flex;
   justify-content: space-between;
   padding: var(--padding);

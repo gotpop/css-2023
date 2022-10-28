@@ -1,7 +1,7 @@
 .footer {
   --local-bg: var(--hwb-grape-4);
   background: var(--local-bg);
-  color: color-contrast(var(--local-bg) vs black, white);
+  color: color-contrast(var(--local-bg) vs var(--black), var(--white));
   display: flex;
   padding: var(--padding);
   place-content: center;
