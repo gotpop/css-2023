@@ -1,0 +1,13 @@
+.menu::part(button) {
+  color: var(--hwb-grape-4);
+  background-color: var(--white);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.menu::part(listbox) {
+  padding: 20px;
+  margin-top: 5px;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+}
