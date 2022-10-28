@@ -6,6 +6,10 @@
   flex-direction: column;
   padding: var(--padding);
 
+  &:nth-child(odd) {
+    --local-bg: var(--hwb-grape-3);
+  }
+
   & h1 {
     margin: 0 0 var(--textMB) 0;
   }
@@ -14,7 +18,7 @@
     margin: 0 0 var(--textMB) 0;
   }
 
-  @container (min-width: 600px) {
+  @container (max-width: 600px) {
     --local-bg: var(--hwb-grape-4);
   }
 }
