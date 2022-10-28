@@ -2,7 +2,6 @@
     "plugins": [
         "stylelint",
         "postcss-nesting",
-        "postcss-custom-media",
         [
             "postcss-preset-env",
             {

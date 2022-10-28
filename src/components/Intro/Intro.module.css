@@ -1,3 +1,5 @@
+/* @custom-media --ipad (width > 600px); */
+
 .intro {
   --local-bg: var(--hwb-grape-5);
   background: var(--local-bg);
@@ -17,7 +19,6 @@
 
 @media (--ipad) {
   .intro {
-    grid-column: span 3;
-    background: yellow !important;
+    grid-column: span var(--span-columns);
   }
 }
