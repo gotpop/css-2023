@@ -6,11 +6,9 @@
   grid-template-rows: auto 1fr 1fr;
   min-height: 100vh;
   padding: var(--padding);
-}
 
-@media (max-width: 600px) {
-  .main {
-    grid-template-columns: 100%;
+  @media (--ipad) {
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
   }
 }
 
