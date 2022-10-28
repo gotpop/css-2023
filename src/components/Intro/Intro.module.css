@@ -14,7 +14,7 @@
     margin: 0 0 var(--textMB) 0;
   }
 
-  @media (--ipad) {
+  /* @media (--ipad) {
     grid-column: span var(--span-columns);
-  }
+  } */
 }
