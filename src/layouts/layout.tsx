@@ -22,11 +22,7 @@ export default function Layout(props) {
       </Head>
       <Header />
       <section className="site">
-        <main
-          className="main"
-          ref={mainRef}
-          // style={{ gridTemplateColumns: `repeat(${layout.columns}, 1fr)` }}
-        >
+        <main className="main" ref={mainRef}>
           {children}
         </main>
       </section>
