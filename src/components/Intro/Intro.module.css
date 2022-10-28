@@ -1,4 +1,4 @@
-/* @custom-media --ipad (width > 600px); */
+@custom-media --ipad (width > 600px);
 
 .intro {
   --local-bg: var(--hwb-grape-5);
