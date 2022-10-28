@@ -16,5 +16,6 @@
 
   @media (--ipad) {
     grid-column: span var(--span-columns);
+    background: yellow !important;
   }
 }
