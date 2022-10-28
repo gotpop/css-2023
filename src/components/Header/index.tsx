@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Link href="/">
-        <h1>Header</h1>
+        <h1>CSS 2023</h1>
       </Link>
       <nav className={styles.nav}>
         <a href="https://github.com/gotpop/ui-system">GitHub</a>
