@@ -7,12 +7,27 @@ export default function Card({ content }) {
   const { title, text } = content
 
   return (
-    <article className={styles.card}>
-      <h1>{title}</h1>
-      <p>{text}</p>
-      <TfiGithub />
-      <SiCsswizardry />
-      <SiMozilla />
-    </article>
+    <div className={styles.card}>
+      <article className={styles.inner}>
+        <section className={styles.content}>
+          <h1>{title}</h1>
+          <p>{text}</p>
+        </section>
+        <aside className={styles.icons}>
+          <div className={styles.iconwrap}>
+            <div className={styles.text}>View GitHub</div>
+            <TfiGithub className={styles.icon} />
+          </div>
+          <div className={styles.iconwrap}>
+            <div className={styles.text}>View CSS Spec</div>
+            <SiCsswizardry className={styles.icon} />
+          </div>
+          <div className={styles.iconwrap}>
+            <div className={styles.text}>View on MDN</div>
+            <SiMozilla className={styles.icon} />
+          </div>
+        </aside>
+      </article>
+    </div>
   )
 }

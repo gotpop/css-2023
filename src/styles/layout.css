@@ -1,6 +1,5 @@
 .main {
   background: var(--hwb-grey-1);
-  container-type: inline-size;
   display: grid;
   grid-gap: calc(var(--padding) / 2);
   grid-template-rows: auto 1fr 1fr;
