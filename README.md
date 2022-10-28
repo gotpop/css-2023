@@ -1,3 +1,10 @@
+<h1 align="center">
+	<br>
+	<img width="360" src="container-query.jpg" alt="Container Query">
+	<br>
+    <br>
+</h1>
+
 # 2023 CSS Components 📰
 
 An @container query & Next.js based component system. Uses draft CSS properties so should only be viewed in Chrome Canary with "Experimental Web Platform" flag enabled.
