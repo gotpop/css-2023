@@ -2,6 +2,9 @@
   "folders": [
     {
       "path": "."
+    },
+    {
+      "path": "src"
     }
   ],
   "settings": {
@@ -9,6 +12,6 @@
       "*.css": "postcss"
     },
     "spellchecker.ignoreFileExtensions": ["*.stylelintrc"],
-    "css.format.enable": false,
+    "css.format.enable": false
   }
 }
