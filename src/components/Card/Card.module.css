@@ -51,6 +51,7 @@
 
   @container card (min-width: 800px) {
     flex: 1 1 40%;
+    align-self: baseline;
   }
 }
 
