@@ -1,0 +1,4 @@
+dialog::backdrop {
+  backdrop-filter: blur(5px);
+  background-color: hwb(0deg 0% 100% / 70%);
+}

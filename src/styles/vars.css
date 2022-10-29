@@ -2,6 +2,9 @@
   --black: black;
   --white: white;
 
+  --success: green;
+  --error: red;
+
   --hwb-grey-1: hwb(0 100% 0%);
   --hwb-grey-2: hwb(0 77% 23%);
   --hwb-grey-3: hwb(0 55% 45%);
