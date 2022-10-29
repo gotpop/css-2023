@@ -2,7 +2,7 @@
   --local-bg: var(--hwb-grape-2);
   background: var(--local-bg);
   color: color-contrast(var(--local-bg) vs var(--black), var(--white));
-  container-name: liam;
+  container-name: card;
   container-type: inline-size;
   display: flex;
 
@@ -16,6 +16,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: var(--padding);
+  gap: calc(var(--padding) / 2);
 
   & h1 {
     margin: 0 0 var(--textMB) 0;
@@ -25,47 +26,56 @@
     margin: 0 0 var(--textMB) 0;
   }
 
-  @container liam (min-width: 800px) {
+  @container card (min-width: 800px) {
     flex-direction: row;
     justify-content: space-between;
     flex: 1 1 100%;
     gap: calc(var(--padding) / 2);
   }
-
-  /* @container liam (max-width: 600px) {
-    --local-bg: var(--hwb-grape-4);
-  } */
 }
+
 .content {
-  @container liam (min-width: 800px) {
+  @container card (min-width: 800px) {
     flex: 1 1 60%;
   }
 }
 
 .icons {
   display: flex;
-  flex-direction: column;
   gap: calc(var(--padding) / 2);
+  
+  @container card (min-width: 400px) {
+    flex-direction: column;
+  }
 
-  @container liam (min-width: 800px) {
+  @container card (min-width: 800px) {
     flex: 1 1 40%;
   }
 }
 
 .iconwrap {
   display: flex;
-  padding: var(--padding);
+  padding: calc(var(--padding) / 2);
   flex: 1 1 100%;
-  justify-content: space-between;
-
+  place-content: center;
   border: 1px solid color-contrast(var(--local-bg) vs var(--black), var(--white));
+  align-items: center;
 
-  @container liam (min-width: 800px) {
+  @container card (min-width: 400px) {    
+    justify-content: space-between;
+    padding: var(--padding);
+  }
+
+  @container card (min-width: 800px) {
     padding: calc(var(--padding) / 2);
     flex: 1 1 40%;
   }
 }
 
-/* .text {
-  background-color: yellow;
-} */
+.text {
+  display: none; 
+
+  @container card (min-width: 400px) {
+    display: flex;
+  }
+}
