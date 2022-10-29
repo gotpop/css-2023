@@ -5,8 +5,11 @@
   color: color-contrast(var(--local-bg) vs var(--black), var(--white));
   display: flex;
   justify-content: space-between;
-  padding: var(--padding);
+  padding: calc(var(--padding) / 2);
   position: sticky;
+  top: 0;
+  z-index: 999;
+  border-radius: 0 0 var(--radius) var(--radius);
 }
 
 .nav {

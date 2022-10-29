@@ -5,6 +5,7 @@
   container-name: card;
   container-type: inline-size;
   display: flex;
+  border-radius: var(--radius);
 
   &:nth-child(odd) {
     --local-bg: var(--hwb-grape-3);
@@ -60,6 +61,7 @@
   place-content: center;
   border: 1px solid color-contrast(var(--local-bg) vs var(--black), var(--white));
   align-items: center;
+  border-radius: var(--radius);
 
   @container card (min-width: 400px) {    
     justify-content: space-between;
