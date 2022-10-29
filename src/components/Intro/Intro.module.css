@@ -1,3 +1,12 @@
+@keyframes fontScale {
+  0% {
+    font-weight: 100;
+  }
+  100% {
+    font-weight: 800;
+  }
+}
+
 .intro {
   --local-bg: var(--hwb-grape-5);
   background: var(--local-bg);
@@ -9,6 +18,8 @@
 
   & h2 {
     margin: 0 0 var(--textMB) 0;
+    font-size: 3rem;
+    animation: fontScale 1s linear forwards;
   }
 
   & p {

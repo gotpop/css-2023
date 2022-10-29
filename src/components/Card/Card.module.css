@@ -81,6 +81,7 @@
 
 .text {
   display: none; 
+  font-weight: 600;
 
   @container card (min-width: 400px) {
     display: flex;

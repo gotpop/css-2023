@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap');@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap");
+
+@font-face {
+  font-family: PlakatoColorHappy2022;
+  src: url(https://cdn.glitch.global/b2727eba-f6b3-4e8e-b32e-53eab7755195/PlakatoColorHappy2022_v1patched.ttf?v=1657190908465);
+}
+
+h1 {
+  font-weight: 1000;
+}
+
+h2 {
+  font-weight: 100;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
