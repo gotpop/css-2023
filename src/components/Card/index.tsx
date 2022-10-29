@@ -2,9 +2,13 @@ import * as React from 'react'
 import styles from './Card.module.css'
 import { TfiGithub } from 'react-icons/tfi'
 import { SiCsswizardry, SiMozilla } from 'react-icons/si'
+import { DiCssTricks } from 'react-icons/di'
+import { AiFillChrome, AiOutlineLink } from 'react-icons/ai'
+import { FaEdge } from 'react-icons/fa'
+
 
 export default function Card({ content }) {
-  const { title, text } = content
+  const { title, text, links } = content
 
   return (
     <div className={styles.card}>
@@ -14,18 +18,26 @@ export default function Card({ content }) {
           <p>{text}</p>
         </section>
         <aside className={styles.icons}>
-          <div className={styles.iconwrap}>
-            <div className={styles.text}>View GitHub</div>
-            <TfiGithub className={styles.icon} />
-          </div>
-          <div className={styles.iconwrap}>
-            <div className={styles.text}>View CSS Spec</div>
-            <SiCsswizardry className={styles.icon} />
-          </div>
-          <div className={styles.iconwrap}>
-            <div className={styles.text}>View on MDN</div>
-            <SiMozilla className={styles.icon} />
-          </div>
+          {links.map(link => (
+            <a key={link.name} href={link.href} className={styles.iconwrap}>
+              <span className={styles.text}>{link.name}</span>
+              {link.name === 'GitHub' ? (
+                <TfiGithub className={styles.icon} />
+              ) : link.name === 'CSS' ? (
+                <SiCsswizardry className={styles.icon} />
+              ) : link.name === 'CSS Tricks' ? (
+                <DiCssTricks className={styles.icon} />
+              ) : link.name === 'Chrome' ? (
+                <AiFillChrome className={styles.icon} />
+              ) : link.name === 'Edge' ? (
+                <FaEdge className={styles.icon} />
+              ) : link.name === 'MDN' ? (
+                <SiMozilla className={styles.icon} />
+              ) : (
+                <AiOutlineLink className={styles.icon} />
+              )}
+            </a>
+          ))}
         </aside>
       </article>
     </div>
