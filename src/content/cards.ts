@@ -59,6 +59,7 @@ export const cards = [
     {
         id: 4,
         text: 'Before @custom-media, media queries had to repeat themselves over and over, or rely on preprocessors to generate the proper output based on static variables during build time.',
+        title: '@custom-media',
         links: [
             {
                 name: "Chrome",
