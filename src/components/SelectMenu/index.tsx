@@ -1,7 +1,6 @@
 import * as React from 'react'
-import { useContext, useEffect, useRef } from 'react'
-import styles from './SelectMenu2.module.css'
-import ColumnContext from '../../context/ColumnsContext'
+import { useEffect, useRef } from 'react'
+import styles from './SelectMenu.module.css'
 
 declare global {
   namespace JSX {
@@ -14,7 +13,7 @@ declare global {
   }
 }
 
-export default function SelectMenu2({ customProperty }) {
+export default function SelectMenu({ customProperty }) {
   const selectMenu = useRef(null)
   const cb = e =>
     document.documentElement.style.setProperty(customProperty, e.target.value)
