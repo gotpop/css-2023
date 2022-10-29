@@ -31,7 +31,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex: 1 1 100%;
-    gap: calc(var(--padding) / 2);
+    gap: calc(var(--padding) * 2);
   }
 }
 
@@ -54,7 +54,7 @@
   }
 }
 
-.iconwrap {
+.iconlink {
   display: flex;
   padding: calc(var(--padding) / 2);
   flex: 1 1 100%;
@@ -62,6 +62,11 @@
   border: 1px solid color-contrast(var(--local-bg) vs var(--black), var(--white));
   align-items: center;
   border-radius: var(--radius);
+  transition: all .5s ease;
+
+  &:hover {
+    background-color: var(--accent);
+  }
 
   @container card (min-width: 400px) {    
     justify-content: space-between;

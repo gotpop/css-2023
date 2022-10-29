@@ -14,6 +14,8 @@
   --hwb-grape-4: hwb(283 0% 75%);
   --hwb-grape-5: hwb(283 0% 90%);
 
+  --accent: hwb(321 6% 24%);
+
   --grid-columns: 2;
 
   --padding: 2rem;
