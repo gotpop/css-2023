@@ -14,7 +14,7 @@ export default function Card({ content }) {
     <div className={styles.card}>
       <article className={styles.inner}>
         <section className={styles.content}>
-          <h1>{title}</h1>
+          <h3>{title}</h3>
           <p>{text}</p>
         </section>
         <aside className={styles.icons}>

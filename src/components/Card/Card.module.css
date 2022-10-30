@@ -1,11 +1,11 @@
 .card {
   --local-bg: var(--hwb-grape-2);
   background: var(--local-bg);
+  border-radius: var(--radius);
   color: color-contrast(var(--local-bg) vs var(--black), var(--white));
   container-name: card;
   container-type: inline-size;
   display: flex;
-  border-radius: var(--radius);
 
   &:nth-child(odd) {
     --local-bg: var(--hwb-grape-3);
@@ -15,16 +15,13 @@
 .inner {
   display: flex;
   flex-direction: column;
+  gap: calc(var(--padding) / 2);
   justify-content: space-between;
   padding: var(--padding);
-  gap: calc(var(--padding) / 2);
-
-  & h1 {
-    margin: 0 0 var(--textMB) 0;
-  }
 
   & p {
     margin: 0 0 var(--textMB) 0;
+    opacity: 0.9;
   }
 
   @container card (min-width: 800px) {
@@ -44,7 +41,7 @@
 .icons {
   display: flex;
   gap: calc(var(--padding) / 2);
-  
+
   @container card (min-width: 400px) {
     flex-direction: column;
   }
@@ -60,16 +57,26 @@
   padding: calc(var(--padding) / 2);
   flex: 1 1 100%;
   place-content: center;
-  border: 1px solid color-contrast(var(--local-bg) vs var(--black), var(--white));
+  border: 1px solid
+    color-contrast(var(--local-bg) vs var(--black), var(--white));
   align-items: center;
   border-radius: var(--radius);
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 
   &:hover {
     background-color: var(--accent);
   }
 
-  @container card (min-width: 400px) {    
+  & .text {
+    display: none;
+    font-weight: 600;
+
+    @container card (min-width: 400px) {
+      display: flex;
+    }
+  }
+
+  @container card (min-width: 400px) {
     justify-content: space-between;
     padding: var(--padding);
   }
@@ -77,14 +84,5 @@
   @container card (min-width: 800px) {
     padding: calc(var(--padding) / 2);
     flex: 1 1 40%;
-  }
-}
-
-.text {
-  display: none; 
-  font-weight: 600;
-
-  @container card (min-width: 400px) {
-    display: flex;
   }
 }

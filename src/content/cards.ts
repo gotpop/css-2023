@@ -21,7 +21,7 @@ export const cards = [
     {
         id: 2,
         text: 'The color-contrast() functional notation takes a color value and compares it to a list of other color values, selecting the one with the highest contrast from the list.',
-        title: 'Color Contrast Functions',
+        title: 'Color Contrast',
         links: [
             {
                 name: "Chrome",
@@ -97,7 +97,7 @@ export const cards = [
     {
         id: 6,
         text: 'Before @nest, there was a lot of repetition in stylesheets. It became especially unwieldy when selectors were long and each was targeting small differences. The convenience of nesting is one of the most common reasons for adopting a preprocessor.',
-        title: 'CSS Nesting',
+        title: 'CSS Nesting Rules',
         links: [
             {
                 name: "Chrome",

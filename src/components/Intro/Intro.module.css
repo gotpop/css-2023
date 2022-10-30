@@ -1,12 +1,3 @@
-@keyframes fontScale {
-  0% {
-    font-weight: 100;
-  }
-  100% {
-    font-weight: 800;
-  }
-}
-
 .intro {
   --local-bg: var(--hwb-grape-5);
   background: var(--local-bg);
@@ -16,14 +7,9 @@
   padding: var(--padding);
   border-radius: var(--radius);
 
-  & h2 {
-    margin: 0 0 var(--textMB) 0;
-    font-size: 3rem;
-    animation: fontScale 1s linear forwards;
-  }
-
   & p {
-    margin: 0 0 var(--textMB) 0;
+    margin: 0 0 calc(var(--textMB) * 2) 0;
+    opacity: .9;
   }
 
   @media (--ipad) {

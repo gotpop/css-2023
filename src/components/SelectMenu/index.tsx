@@ -28,11 +28,7 @@ export default function SelectMenu({ customProperty }) {
     <div>
       <selectmenu
         ref={selectMenu}
-        className={styles.menu}
-        defaultValue={'DEFAULT'}>
-        <option value="DEFAULT" disabled style={{ display: 'none' }}>
-          Choose number of grid columns ...
-        </option>
+        className={styles.menu}>
         <option value="1">1 Column</option>
         <option value="2">2 Columns</option>
         <option value="3">3 Columns</option>

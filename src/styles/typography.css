@@ -5,13 +5,28 @@
   src: url(https://cdn.glitch.global/b2727eba-f6b3-4e8e-b32e-53eab7755195/PlakatoColorHappy2022_v1patched.ttf?v=1657190908465);
 }
 
+h2, h3 {
+  margin: 0 0 calc(var(--textMB) * 2) 0;
+
+  &::after {
+    content: "";
+    display: flex;
+    height: 1px;
+    width: calc(100% - 1rem);
+    margin: 0 .5rem;
+    background-color: currentColor;
+    opacity: .3;
+    translate: 0 .33em;
+  }
+}
+
 h1 {
   font-weight: 1000;
   font-size: var(--size-l-5);
 }
 
 h2 {
-  font-weight: 100;
+  font-weight: 800;
   font-size: var(--size-l-4);
 }
 
