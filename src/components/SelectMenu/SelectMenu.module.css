@@ -1,7 +1,7 @@
 .menu::part(button) {
   color: var(--hwb-grape-4);
   background-color: var(--white);
-  padding: 15px;
+  padding: 1rem 3rem;
   border-radius: 5px;
 }
 
@@ -22,6 +22,7 @@
     margin-bottom: .5rem;
     transition: all .2s ease;
     background-color: transparent;
+    cursor: pointer;
 
     &:hover {
       scale: 1.1;
