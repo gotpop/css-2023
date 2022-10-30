@@ -6,7 +6,7 @@ An @container query & Next.js based component system. Uses draft CSS properties 
 	<img width="100%" src="./public/container-query.png" alt="Container Query">
 </h1>
 
-# Source article
+## Source article
 
 https://web.dev/state-of-css-2022
 
