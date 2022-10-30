@@ -9,7 +9,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  border-radius: 0 0 var(--radius) var(--radius);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
   box-shadow: rgba(0, 0, 0, 70%) 1px 1px 9px;
 }
 

@@ -1,7 +1,7 @@
 .card {
   --local-bg: var(--hwb-grape-2);
   background: var(--local-bg);
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   color: color-contrast(var(--local-bg) vs var(--black), var(--white));
   container-name: card;
   container-type: inline-size;
