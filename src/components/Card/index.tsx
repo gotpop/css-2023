@@ -1,5 +1,6 @@
 import * as React from 'react'
 import styles from './Card.module.css'
+import stylesIcon from './Icons.module.css'
 import { TfiGithub } from 'react-icons/tfi'
 import { SiCsswizardry, SiMozilla } from 'react-icons/si'
 import { DiCssTricks } from 'react-icons/di'
@@ -17,24 +18,24 @@ export default function Card({ content }) {
           <h3>{title}</h3>
           <p>{text}</p>
         </section>
-        <aside className={styles.icons}>
+        <aside className={stylesIcon.icons}>
           {links.map(link => (
-            <a key={link.name} href={link.href} className={styles.iconlink}>
-              <span className={styles.text}>{link.name}</span>
+            <a key={link.name} href={link.href} className={stylesIcon.iconlink}>
+              <span className={stylesIcon.text}>{link.name}</span>
               {link.name === 'GitHub' ? (
-                <TfiGithub className={styles.icon} />
+                <TfiGithub className={stylesIcon.icon} />
               ) : link.name === 'CSS' ? (
-                <SiCsswizardry className={styles.icon} />
+                <SiCsswizardry className={stylesIcon.icon} />
               ) : link.name === 'CSS Tricks' ? (
-                <DiCssTricks className={styles.icon} />
+                <DiCssTricks className={stylesIcon.icon} />
               ) : link.name === 'Chrome' ? (
-                <AiFillChrome className={styles.icon} />
+                <AiFillChrome className={stylesIcon.icon} />
               ) : link.name === 'Edge' ? (
-                <FaEdge className={styles.icon} />
+                <FaEdge className={stylesIcon.icon} />
               ) : link.name === 'MDN' ? (
-                <SiMozilla className={styles.icon} />
+                <SiMozilla className={stylesIcon.icon} />
               ) : (
-                <AiOutlineLink className={styles.icon} />
+                <AiOutlineLink className={stylesIcon.icon} />
               )}
             </a>
           ))}
