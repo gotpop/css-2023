@@ -34,16 +34,37 @@
   font-size: 1.5rem;
   padding: calc(var(--padding) / 2) var(--padding);
   background-color: var(--hwb-grape-4);
-  color: var(--white);
   border-radius: calc(var(--radius) * 2);
   transition: background-color .5s ease;
   cursor: pointer;
   display: flex;
   gap: 1rem;
   align-items: center;
-
+  color: var(--error);
+  
+  & span {
+    color: var(--white);
+  }
+  
   &:hover {
     background-color: var(--accent);
+    color: var(--white);
+  }
+}
+
+.success {
+  color: var(--success);
+}
+
+.error {
+  color: var(--error);
+}
+
+.success, .error {
+  transition: fill 1s ease;
+
+  &:hover {
+    color: var(--white);
   }
 }
 

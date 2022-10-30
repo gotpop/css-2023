@@ -33,13 +33,13 @@ export default function Modal() {
         />
       </p>
       <form method="dialog" className={styles.buttons}>
-        <button className={styles.button}>
+        <button className={`${styles.button} ${styles.success}`}>
           <span>I understand</span>
-          <BsCheckLg style={{ color: 'var(--success)', fontSize: '1em' }} />
+          <BsCheckLg />
         </button>
-        <button className={styles.button} onClick={dontShowAgain}>
+        <button className={`${styles.button} ${styles.error}`} onClick={dontShowAgain}>
           <span>Dont show again</span>
-          <ImCross style={{ color: 'var(--error)', fontSize: '1em' }} />
+          <ImCross />
         </button>
       </form>
     </dialog>
