@@ -11,6 +11,7 @@
   container-name: card;
   container-type: inline-size;
   display: flex;
+  justify-content: center;
 
   & .inner {
     display: flex;
@@ -26,9 +27,9 @@
 
     @container card (min-width: 800px) {
       flex-direction: row;
-      justify-content: space-between;
       flex: 1 1 100%;
       gap: calc(var(--padding) * 2);
+      justify-content: space-between;
     }
   }
 }
