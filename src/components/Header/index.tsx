@@ -14,15 +14,15 @@ export default function Header() {
       <nav className={styles.nav}>
         <a href="https://github.com/gotpop/ui-system">
           <span>GitHub</span>
-          <TfiGithub />
+          <TfiGithub style={{ color: 'var(--success)', fontSize: '1em' }} />
         </a>
         <a href="http://localhost:3000">
           <span>LocalHost</span>
-          <AiFillHome />
+          <AiFillHome style={{ color: 'var(--error)', fontSize: '1em' }} />
         </a>
         <a href="https://ui-system-gold.vercel.app/">
           <span>Live</span>
-          <GoZap />
+          <GoZap style={{ color: 'var(--warning)', fontSize: '1em' }}/>
         </a>
       </nav>
     </header>
