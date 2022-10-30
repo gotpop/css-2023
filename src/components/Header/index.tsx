@@ -14,11 +14,11 @@ export default function Header() {
       <nav className={styles.nav}>
         <a href="https://github.com/gotpop/ui-system">
           <span>GitHub</span>
-          <AiFillHome />
+          <TfiGithub />
         </a>
         <a href="http://localhost:3000">
           <span>LocalHost</span>
-          <TfiGithub />
+          <AiFillHome />
         </a>
         <a href="https://ui-system-gold.vercel.app/">
           <span>Live</span>
