@@ -1,15 +1,17 @@
 .menu::part(button) {
-  color: var(--hwb-grape-4);
+  color: var(--hwb-grape-5);
   background-color: var(--white);
   padding: 1rem 3rem;
   border-radius: 5px;
+  font-weight: 600;
+  font-size: var(--size-l-1);
 }
 
 .menu::part(listbox) {
   padding: 20px;
   margin-top: 5px;
   border: 1px solid var(--white);
-  border-radius: 5px;
+  border-radius: var(--radius);
 }
 
 .menu {
@@ -25,7 +27,7 @@
     cursor: pointer;
 
     &:hover {
-      scale: 1.1;
+      scale: 1.05;
     }
   }
 }

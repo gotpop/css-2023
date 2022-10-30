@@ -21,5 +21,15 @@
   & a {
     display: inline-flex;
     margin: 0 0 0 calc(var(--padding) / 2);
+    gap: 1rem;
+    align-items: center;
+    background: var(--hwb-grape-3);
+    padding: 1rem 2rem;
+    border-radius: var(--radius);
+    transition: background-color .4s ease; 
+
+    &:hover {
+      background-color: var(--accent);
+    }
   }
 }
