@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { useEffect, useRef } from 'react'
+import { BsLayoutThreeColumns } from 'react-icons/bs'
 import styles from './SelectMenu.module.css'
 
 declare global {
@@ -26,12 +27,19 @@ export default function SelectMenu({ customProperty }) {
 
   return (
     <div>
-      <selectmenu
-        ref={selectMenu}
-        className={styles.menu}>
-        <option value="1">1 Column</option>
-        <option value="2">2 Columns</option>
-        <option value="3">3 Columns</option>
+      <selectmenu ref={selectMenu} className={styles.menu}>
+        <option value="1">
+          <span>1 Column</span>
+          <BsLayoutThreeColumns />
+        </option>
+        <option value="2">
+          <span>2 Columns</span>
+          <BsLayoutThreeColumns />
+        </option>
+        <option value="3">
+          <span>3 Columns</span>
+          <BsLayoutThreeColumns />
+        </option>
       </selectmenu>
     </div>
   )
