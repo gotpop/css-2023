@@ -16,8 +16,8 @@
     padding: calc(var(--padding) / 2);
     flex: 1 1 100%;
     place-content: center;
-    border: 1px solid
-      color-contrast(var(--local-bg) vs var(--black), var(--white));
+    border: 1px solid;
+    border-color: color-contrast(var(--local-bg) vs var(--black), var(--white));
     align-items: center;
     border-radius: var(--radius);
     transition: all 0.5s ease;
