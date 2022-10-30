@@ -1,5 +1,6 @@
 body {
   accent-color: var(--accent);
+  align-items: center;
   display: flex;
   flex-direction: column;
   font-family: "Roboto Flex", Arial, Helvetica, sans-serif;
