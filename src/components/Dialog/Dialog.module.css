@@ -1,0 +1,31 @@
+.dialog {
+  background-color: var(--white);
+  border-radius: calc(var(--radius) * 2);
+  padding: calc(var(--padding) * 2);
+  flex-direction: column;
+  border: none;
+  max-width: 600px;
+
+  & h4 {
+    margin: 0 0 var(--textMB) 0;
+    font-size: 1.5rem;
+  }
+
+  & p {
+    margin: 0 0 calc(var(--textMB) * 2) 0;
+  }
+
+  & pre {
+    display: inline-flex;
+    white-space: break-spaces;
+    background-color: var(--hwb-grey-2);
+    border-radius: calc(var(--radius) * 2);
+    padding: var(--padding);
+    margin: 0 0 calc(var(--textMB) * 2) 0;
+  }
+
+  & .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
