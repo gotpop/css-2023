@@ -35,8 +35,11 @@
   --grid-columns: 1;
 
   --padding: 2rem;
+  --paddingBtn: 2em;
   --textMB: 1rem;
 
   --radius: .5rem;
   --radius-lg: .7rem;
+
+  --timing: .4s;
 }

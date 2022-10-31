@@ -1,12 +1,12 @@
 import * as React from 'react'
 import styles from './Card.module.css'
 import stylesIcon from './Icons.module.css'
+
+import { FaEdge } from 'react-icons/fa'
 import { TfiGithub } from 'react-icons/tfi'
 import { SiCsswizardry, SiMozilla } from 'react-icons/si'
 import { DiCssTricks } from 'react-icons/di'
 import { AiFillChrome, AiOutlineLink } from 'react-icons/ai'
-import { FaEdge } from 'react-icons/fa'
-
 
 export default function Card({ content }) {
   const { title, text, links } = content
