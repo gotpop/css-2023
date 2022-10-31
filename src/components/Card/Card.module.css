@@ -1,5 +1,7 @@
 .card {
   --local-bg: var(--hwb-grape-2);
+  --local-direction: column;
+  --local-gap: calc(var(--padding) / 2);
 
   &:nth-child(odd) {
     --local-bg: var(--hwb-grape-3);
@@ -15,21 +17,20 @@
 
   & .inner {
     display: flex;
-    flex-direction: column;
-    gap: calc(var(--padding) / 2);
+    flex-direction: var(--local-direction);
+    gap: var(--local-gap);
     justify-content: space-between;
     padding: var(--padding);
+    flex: 1 1 100%;
+
+    @container card (min-width: 800px) {
+      --local-direction: row;
+      --local-gap: calc(var(--padding) * 2);
+    }
 
     & p {
       margin: 0 0 var(--textMB) 0;
-      opacity: 0.9;
-    }
-
-    @container card (min-width: 800px) {
-      flex-direction: row;
-      flex: 1 1 100%;
-      gap: calc(var(--padding) * 2);
-      justify-content: space-between;
+      opacity: var(--textOpacity);
     }
   }
 }
