@@ -1,3 +1,14 @@
+declare global {
+    namespace JSX {
+        interface IntrinsicElements {
+            selectmenu: React.DetailedHTMLProps<
+                React.HTMLAttributes<HTMLSelectElement>,
+                HTMLSelectElement
+            >
+        }
+    }
+}
+
 export interface IFeedProps {
     posts: IPost[];
 }

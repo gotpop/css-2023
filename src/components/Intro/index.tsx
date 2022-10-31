@@ -1,6 +1,6 @@
 import * as React from 'react'
 import styles from './Intro.module.css'
-import SelectMenu2 from '@components/SelectMenu'
+import SelectMenu from '@components/SelectMenu'
 
 export default function Intro({ content }) {
   const { title, text } = content
@@ -10,7 +10,7 @@ export default function Intro({ content }) {
     <section className={styles.intro}>
       <h2>{title}</h2>
       <p>{text}</p>
-      <SelectMenu2 customProperty={customProperty} />
+      <SelectMenu customProperty={customProperty} />
     </section>
   )
 }

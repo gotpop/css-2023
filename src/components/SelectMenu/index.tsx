@@ -3,17 +3,6 @@ import { useEffect, useRef } from 'react'
 import { BsLayoutThreeColumns } from 'react-icons/bs'
 import styles from './SelectMenu.module.css'
 
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      selectmenu: React.DetailedHTMLProps<
-        React.HTMLAttributes<HTMLSelectElement>,
-        HTMLSelectElement
-      >
-    }
-  }
-}
-
 export default function SelectMenu({ customProperty }) {
   const selectMenu = useRef(null)
   const cb = e =>
