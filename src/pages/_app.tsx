@@ -1,10 +1,10 @@
 import '../styles/app.css'
-import { ColumnProvider } from '../context/ColumnsContext'
+import { MenuProvider } from '@context/MenuContext'
 
-export default function MyApp({ Component, pageProps }) {
+export default function CssApp({ Component, pageProps }) {
   return (
-    <ColumnProvider>
+    <MenuProvider>
       <Component {...pageProps} />
-    </ColumnProvider>
+    </MenuProvider>
   )
 }
