@@ -1,6 +1,7 @@
 .footer {
   --local-bg: var(--hwb-grape-4);
-  
+
+  grid-area: foot;
   background: var(--local-bg);
   color: color-contrast(var(--local-bg) vs var(--black), var(--white));
   display: flex;
