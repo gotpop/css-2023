@@ -16,7 +16,6 @@
     "jsx": "preserve",
     "paths": {
       "@content/*": ["./src/content/*"],
-      "@layouts/*": ["./src/layouts/*"],
       "@utils/*": ["./src/utils/*"],
       "@types/*": ["./src/types/*"],
       "@context/*": ["./src/context/*"],
