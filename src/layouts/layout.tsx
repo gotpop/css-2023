@@ -5,13 +5,7 @@ import Footer from '@components/Footer'
 import Trigger from '@components/Trigger'
 import styles from './Site.module.css'
 import stylesMain from './Main.module.css'
-
-const getScrollBarWidth = () => {
-  let root = document.documentElement
-  const width = window.innerWidth - root.clientWidth
-
-  root.style.setProperty('--scrollbar-width', `${width}px`)
-}
+import { getScrollBarWidth } from '@utils/scrollBarWidth'
 
 export default function Layout(props) {
   const { children } = props
