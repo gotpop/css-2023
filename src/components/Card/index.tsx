@@ -20,7 +20,7 @@ export default function Card({ content }) {
         </section>
         <aside className={stylesIcon.icons}>
           {links.map(link => (
-            <a key={link.name} href={link.href} className={stylesIcon.iconlink}>
+            <a key={link.name} href={link.href} className={stylesIcon.link}>
               <span className={stylesIcon.text}>{link.name}</span>
               {link.name === 'GitHub' ? (
                 <TfiGithub className={stylesIcon.icon} />
