@@ -1,9 +1,11 @@
-import ButtonIcon from '@components/ButtonIcon'
 import * as React from 'react'
 import { useEffect, useRef } from 'react'
+import ButtonIcon from '@components/ButtonIcon'
+
 import { AiOutlineCheckCircle } from 'react-icons/ai'
 import { BsCheckLg } from 'react-icons/bs'
 import { ImCross } from 'react-icons/im'
+
 import styles from './Dialog.module.css'
 import stylesSupported from './Supported.module.css'
 import { dialogContent } from './dialog.content'

@@ -4,10 +4,10 @@
 
 @supports font-tech(color-COLRv1) {
   .colourV1 {
+    align-items: center;
     display: flex;
     gap: 1rem;
     margin: 0 0 calc(var(--textMB) * 2) 0;
-    align-items: center;
     
     & svg {
       color: var(--success);
