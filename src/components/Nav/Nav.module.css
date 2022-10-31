@@ -2,6 +2,7 @@
   align-self: center;
   display: flex;
   gap: calc(var(--padding) / 2);
+  font-size: var(--size-s-1);
 
   & a {
     align-items: center;
