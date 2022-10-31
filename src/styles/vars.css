@@ -44,4 +44,10 @@
   --radius-lg: .7rem;
 
   --timing: .4s;
+
+  --menu-side-width: 250px;
+  --menu-side-offset: -250px;
+  --menu-open: 0px;
+  --menu-closed: var(--menu-side-offset);
+  --menu-state: var(--menu-closed);
 }

@@ -1,0 +1,25 @@
+/* stylelint-disable declaration-colon-space-after */
+.site {
+  display: grid;
+  grid-template-areas:
+    "head main"
+    "head main"
+    "head foot";
+  grid-template-columns: var(--menu-side-width) calc(100vw - var(--scrollbar-width));
+  grid-template-rows: 1fr 1fr 1fr;
+  overflow: hidden;
+  transition: translate var(--timing) ease;
+  translate: var(--menu-state);
+  width: calc(100vw + var(--menu-side-width));
+
+  @media (--ipad) {
+    grid-template-areas:
+      "head"
+      "main"
+      "foot";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    translate: var(--menu-open);
+    width: auto;
+  }
+}

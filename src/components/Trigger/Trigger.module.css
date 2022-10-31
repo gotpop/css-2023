@@ -24,4 +24,8 @@
   & svg {
     transition: fill var(--timing) ease;
   }
+
+  @media (--ipad) {
+    display: none;
+  }
 }

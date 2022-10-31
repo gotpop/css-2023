@@ -6,6 +6,7 @@
   
   @media (--ipad) {
     align-self: center;
+    flex-direction: row;
   }
 
   & a {
