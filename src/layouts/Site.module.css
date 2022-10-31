@@ -10,7 +10,7 @@
   overflow: hidden;
   transition: translate var(--timing) ease;
   translate: var(--menu-state);
-  width: calc(100vw + var(--menu-side-width));
+  width: calc(100vw + var(--menu-side-width) - var(--scrollbar-width));
 
   @media (--ipad) {
     grid-template-areas:
