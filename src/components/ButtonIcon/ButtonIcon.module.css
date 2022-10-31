@@ -12,16 +12,16 @@
   padding: calc(var(--paddingBtn) / 2) var(--paddingBtn);
   transition: background-color var(--timing) ease;
 
-  & span {
-    color: var(--white);
-  }
-  
-  & svg {
-    transition: fill var(--timing) ease;
-  }
-
   &:hover {
     background-color: var(--accent);
     color: var(--white);
+  }
+
+  & span {
+    color: var(--white);
+  }
+
+  & svg {
+    transition: fill var(--timing) ease;
   }
 }
