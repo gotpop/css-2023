@@ -10,7 +10,7 @@
 
   & p {
     margin: 0 0 calc(var(--textMB) * 2) 0;
-    opacity: .9;
+    opacity: var(--textOpacity);
   }
 
   @media (--ipad) {
