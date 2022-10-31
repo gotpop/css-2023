@@ -4,6 +4,7 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Trigger from '@components/Trigger'
 import styles from './Site.module.css'
+import stylesMain from './Main.module.css'
 
 const getScrollBarWidth = () => {
   let root = document.documentElement
@@ -28,8 +29,8 @@ export default function Layout(props) {
       </Head>
       <div className={styles.site}>
         <Header />
-        <div className="main-wrap">
-          <main className="main">
+        <div className={stylesMain.mainwrap}>
+          <main className={stylesMain.main}>
             <Trigger />
             {children}
           </main>

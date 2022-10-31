@@ -33,6 +33,8 @@
   --size-s-3: calc(var(--size-s-2) / var(--scale));
 
   --textOpacity: 0.9;
+  --font-primary: "Roboto Flex";
+  --font-fallback: " Arial, Helvetica, sans-serif";
 
   --grid-columns: 1;
 
@@ -40,10 +42,10 @@
   --paddingBtn: 2em;
   --textMB: 1rem;
 
-  --radius: .5rem;
-  --radius-lg: .7rem;
+  --radius: 0.5rem;
+  --radius-lg: 0.7rem;
 
-  --timing: .4s;
+  --timing: 0.4s;
 
   --menu-side-width: 250px;
   --menu-side-offset: -250px;
