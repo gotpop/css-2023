@@ -1,16 +1,16 @@
-.main {
-  background: var(--hwb-grey-1);
-  display: grid;
-  grid-gap: calc(var(--padding) / 2);
-  padding: var(--padding);
-
-  @media (--ipad) {
-    grid-template-columns: repeat(var(--grid-columns), 1fr);
-  }
-}
-
-.site {
+.main-wrap {
   display: grid;
   grid-template-columns: minmax(100px, 1000px);
   place-content: center;
+
+  & .main {
+    background: var(--hwb-grey-1);
+    display: grid;
+    grid-gap: calc(var(--padding) / 2);
+    padding: var(--padding);
+  
+    @media (--ipad) {
+      grid-template-columns: repeat(var(--grid-columns), 1fr);
+    }
+  }
 }
