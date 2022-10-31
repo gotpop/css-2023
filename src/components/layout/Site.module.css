@@ -1,25 +1,23 @@
-/* stylelint-disable declaration-colon-space-after */
 .site {
+  --local-columns: var(--menu-side-width) calc(100vw - var(--scrollbar-width));
+  --local-rows: 1fr 1fr 1fr;
+  --local-template: "head main" "head main" "head foot";
+  --local-translate: var(--menu-state);
+  --local-width: calc(100vw + var(--menu-side-width) - var(--scrollbar-width));
+
   display: grid;
-  grid-template-areas:
-    "head main"
-    "head main"
-    "head foot";
-  grid-template-columns: var(--menu-side-width) calc(100vw - var(--scrollbar-width));
-  grid-template-rows: 1fr 1fr 1fr;
-  overflow: hidden;
+  grid-template-areas: var(--local-template);
+  grid-template-columns: var(--local-columns);
+  grid-template-rows: var(--local-rows);
   transition: translate var(--timing) ease;
-  translate: var(--menu-state);
-  width: calc(100vw + var(--menu-side-width) - var(--scrollbar-width));
+  translate: var(--local-translate);
+  width: var(--local-width);
 
   @media (--ipad) {
-    grid-template-areas:
-      "head"
-      "main"
-      "foot";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    translate: var(--menu-open);
-    width: auto;
+    --local-columns: 1fr;
+    --local-rows: auto;
+    --local-template: "head" "main" "foot";
+    --local-translate: var(--menu-open);
+    --local-width: auto;
   }
 }
