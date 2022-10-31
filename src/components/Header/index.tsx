@@ -1,14 +1,12 @@
-import Link from 'next/link'
 import * as React from 'react'
 import styles from './Header.module.css'
 import Nav from '@components/Nav'
+import Logo from '@components/Logo'
 
 export default function Header() {
   return (
     <header className={styles.header}>
-      <Link className="logo" href="/">
-        <h1>CSS 2023</h1>
-      </Link>
+      <Logo />
       <Nav />
     </header>
   )
