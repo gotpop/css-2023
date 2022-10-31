@@ -1,2 +1,1 @@
-let root = document.documentElement
-export const set = (prop, value) => root.style.setProperty(prop, value)
+export const set = (prop, value) => document.documentElement.style.setProperty(prop, value)
