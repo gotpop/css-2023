@@ -10,7 +10,7 @@ export default function Intro({ content }) {
     <section className={styles.intro}>
       <h2>{title}</h2>
       <p>{text}</p>
-      <SelectMenu customProperty={customProperty} />
+      <SelectMenu customProp={customProperty} />
     </section>
   )
 }

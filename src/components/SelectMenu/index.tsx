@@ -3,10 +3,10 @@ import { useEffect, useRef } from 'react'
 import { BsLayoutThreeColumns } from 'react-icons/bs'
 import styles from './SelectMenu.module.css'
 
-export default function SelectMenu({ customProperty }) {
+export default function SelectMenu({ customProp }) {
   const selectMenu = useRef(null)
   const cb = e =>
-    document.documentElement.style.setProperty(customProperty, e.target.value)
+    document.documentElement.style.setProperty(customProp, e.target.value)
 
   useEffect(() => {
     selectMenu.current.addEventListener('change', cb)
