@@ -4,7 +4,13 @@
   border: none;
   flex-direction: column;
   max-width: 600px;
-  padding: calc(var(--padding) * 2);
+  padding: var(--padding);
+  margin: auto 2rem;
+  
+  @media (--ipad) {
+    padding: calc(var(--padding) * 2);
+    margin: auto;
+  }
 
   & h4 {
     font-size: 1.5rem;
@@ -27,5 +33,13 @@
   & .buttons {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+
+
+    @media (--ipad) {
+      flex-direction: row;
+      
+    }
   }
 }
