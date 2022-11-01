@@ -10,8 +10,7 @@
   gap: calc(var(--paddingBtn) / 2);
   padding: calc(var(--paddingBtn) / 2) var(--paddingBtn);
   transition: background-color var(--timing) ease;
-  /* container-name: button; */
-  /* container-type: inline-size; */
+  justify-content: space-between;
   
   &:hover {
     background-color: var(--accent);
