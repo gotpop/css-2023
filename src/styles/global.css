@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   accent-color: var(--accent);
   font-family: var(--font-primary), var(--font-fallback);

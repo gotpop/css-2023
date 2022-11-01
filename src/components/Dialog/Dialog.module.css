@@ -1,16 +1,7 @@
 .dialog {
-  background-color: var(--white);
-  border-radius: calc(var(--radius) * 2);
   border: none;
-  flex-direction: column;
-  max-width: 600px;
-  padding: var(--padding);
-  margin: auto 2rem;
-  
-  @media (--ipad) {
-    padding: calc(var(--padding) * 2);
-    margin: auto;
-  }
+  background-color: transparent;
+  padding: 1rem;
 
   & h4 {
     font-size: 1.5rem;
@@ -28,6 +19,7 @@
     margin: 0 0 calc(var(--textMB) * 2) 0;
     padding: var(--padding);
     white-space: break-spaces;
+    word-break: break-all;
   }
 
   & .buttons {
@@ -38,7 +30,19 @@
 
     @media (--ipad) {
       flex-direction: row;
-      
     }
+  }
+}
+
+.inner {
+  background-color: var(--white);
+  border-radius: calc(var(--radius) * 2);
+
+  flex-direction: column;
+  max-width: 600px;
+  padding: var(--padding);
+
+  @media (--ipad) {
+    padding: calc(var(--padding) * 2);
   }
 }

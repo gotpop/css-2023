@@ -25,26 +25,28 @@ export default function Dialog() {
 
   return (
     <dialog ref={dialog} className={styles.dialog}>
-      <h4>{title}</h4>
-      <p>{text}</p>
-      <pre>{pre}</pre>
-      <p className={stylesSupported.colourV1}>
-        <span>{supported}</span>
-        <AiOutlineCheckCircle />
-      </p>
-      <form method="dialog" className={styles.buttons}>
-        <ButtonIcon
-          content={'I understand'}
-          properties={cssSuccess}
-          icon={BsCheckLg}
-        />
-        <ButtonIcon
-          doClick={dontShowAgain}
-          content={'Dont show again'}
-          properties={cssError}
-          icon={ImCross}
-        />
-      </form>
+      <div className={styles.inner}>
+        <h4>{title}</h4>
+        <p>{text}</p>
+        <pre>{pre}</pre>
+        <p className={stylesSupported.colourV1}>
+          <span>{supported}</span>
+          <AiOutlineCheckCircle />
+        </p>
+        <form method="dialog" className={styles.buttons}>
+          <ButtonIcon
+            content={'I understand'}
+            properties={cssSuccess}
+            icon={BsCheckLg}
+          />
+          <ButtonIcon
+            doClick={dontShowAgain}
+            content={'Dont show again'}
+            properties={cssError}
+            icon={ImCross}
+          />
+        </form>
+      </div>
     </dialog>
   )
 }
