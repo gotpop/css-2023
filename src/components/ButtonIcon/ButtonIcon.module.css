@@ -21,10 +21,6 @@
     color: var(--white);
     font-size: var(--size-s-1);
 
-    @media (--ipad) {
-      font-size: var(--size-l-1);
-    }
-    
     @container (min-width: 600px) {
       font-size: var(--size-l-1);
     }
