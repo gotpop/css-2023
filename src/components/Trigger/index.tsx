@@ -23,7 +23,7 @@ export default function Trigger() {
 
   return (
     <button onClick={handleClick} className={styles.trigger} ref={trigger}>
-      <TriggerIcon menuState={menu}/>
+      <TriggerIcon menuState={menu} />
       {!menu.open && <span>Open Menu</span>}
       {menu.open && <span>Close Menu</span>}
     </button>
