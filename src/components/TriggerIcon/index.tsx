@@ -11,8 +11,8 @@ export default function TriggerIcon({ menuState }) {
     console.log('menuState :', menuState)
 
     open
-      ? trigger.current.setAttribute('liam', true)
-      : trigger.current.setAttribute('liam', false)
+      ? trigger.current.setAttribute('open', true)
+      : trigger.current.setAttribute('open', false)
   }, [menuState])
 
   return (

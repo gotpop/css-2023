@@ -2,7 +2,7 @@
 .top {
   animation-name: topReverse;
 
-  @nest [liam*="true"] & {
+  @nest [open*="true"] & {
     animation-name: top;
     background-color: var(--error);
   }
@@ -12,7 +12,7 @@
   animation-name: middleReverse;
   translate: 0 calc(var(--local-size) * 0.45);
   
-  @nest [liam*="true"] & {
+  @nest [open*="true"] & {
     background-color: var(--error);
     animation-name: middle;
   }
@@ -21,7 +21,7 @@
 .bottom {
   animation-name: bottomReverse;
   
-  @nest [liam*="true"] & {
+  @nest [open*="true"] & {
     background-color: var(--error);
     animation-name: bottom;
   }
