@@ -2,7 +2,7 @@
   --iconColour: var(--white);
   --local-size: 1.5em;
   --local-translate: 0 calc(var(--local-size) / 2.2);
-  --local-duration: .4s;
+  --local-duration: 0.4s;
   --local-name: top;
 
   width: var(--local-size);
@@ -12,45 +12,30 @@
   justify-content: center;
 
   & span {
-    background-color: var(--hwb-grape-4);
-    height: calc(var(--local-size) / 6);
-    width: var(--local-size);
-    display: flex;
-    border-radius: 0.25em;
-    transform-origin: center;
-    position: absolute;
-    top: 0;
     animation-duration: var(--local-duration);
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+    background-color: var(--hwb-grape-4);
+    border-radius: 0.25em;
+    display: flex;
+    height: calc(var(--local-size) / 6);
+    position: absolute;
+    top: 0;
+    transform-origin: center;
+    width: var(--local-size);
   }
-  
+
   & .top {
     animation-name: topReverse;
-    
-    @nest [liam*="true"] & {
-      animation-name: top;
-      background-color: var(--error);
-    }
   }
-  
+
   & .middle {
     animation-name: middleReverse;
     translate: 0 calc(var(--local-size) * 0.45);
-    
-    @nest [liam*="true"] & {
-      background-color: var(--error);
-      animation-name: middle;
-    }
   }
-  
+
   & .bottom {
     animation-name: bottomReverse;
-    
-    @nest [liam*="true"] & {
-      background-color: var(--error);
-      animation-name: bottom;
-    }
   }
 }
 
@@ -140,4 +125,4 @@
   100% {
     translate: 0 calc(var(--local-size) * 0.9);
   }
-}
+} 
