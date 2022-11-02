@@ -12,21 +12,21 @@
   padding: calc(var(--paddingBtn) / 2);
   transition: background-color var(--timing) ease;
   
-  /* 
+  @media (--ipad) {
+    display: none;
+  }
+  
   &:hover {
     background-color: var(--accent);
     color: var(--white);
-  } */
-
+  }
+  
   & span {
     color: var(--hwb-grape-4);
+    transition: color var(--timing) ease;
   }
 
   & svg {
     transition: fill var(--timing) ease;
-  }
-
-  @media (--ipad) {
-    display: none;
   }
 }

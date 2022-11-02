@@ -1,4 +1,3 @@
-
 .top {
   animation-name: topIn;
 
@@ -6,12 +5,16 @@
     animation-name: topOut;
     background-color: var(--error);
   }
+
+  @nest button:hover [open*="true"] & {
+    background-color: var(--white);
+  }
 }
 
 .middle {
   animation-name: middleIn;
   translate: 0 calc(var(--local-size) * 0.45);
-  
+
   @nest [open*="true"] & {
     background-color: var(--error);
     animation-name: middleOut;
@@ -20,10 +23,14 @@
 
 .bottom {
   animation-name: bottomIn;
-  
+
   @nest [open*="true"] & {
     background-color: var(--error);
     animation-name: bottomOut;
+  }
+
+  @nest button:hover [open*="true"] & {
+    background-color: var(--white);
   }
 }
 
@@ -113,4 +120,4 @@
   100% {
     translate: 0 calc(var(--local-size) * 0.9);
   }
-} 
+}
