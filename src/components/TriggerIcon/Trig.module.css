@@ -1,33 +1,33 @@
 
 .top {
-  animation-name: topReverse;
+  animation-name: topIn;
 
   @nest [open*="true"] & {
-    animation-name: top;
+    animation-name: topOut;
     background-color: var(--error);
   }
 }
 
 .middle {
-  animation-name: middleReverse;
+  animation-name: middleIn;
   translate: 0 calc(var(--local-size) * 0.45);
   
   @nest [open*="true"] & {
     background-color: var(--error);
-    animation-name: middle;
+    animation-name: middleOut;
   }
 }
 
 .bottom {
-  animation-name: bottomReverse;
+  animation-name: bottomIn;
   
   @nest [open*="true"] & {
     background-color: var(--error);
-    animation-name: bottom;
+    animation-name: bottomOut;
   }
 }
 
-@keyframes top {
+@keyframes topOut {
   0% {
     translate: 0 0em;
   }
@@ -41,7 +41,7 @@
   }
 }
 
-@keyframes topReverse {
+@keyframes topIn {
   0% {
     rotate: 45deg;
     translate: var(--local-translate);
@@ -55,7 +55,7 @@
   }
 }
 
-@keyframes middle {
+@keyframes middleOut {
   0% {
     width: var(--local-size);
   }
@@ -71,7 +71,7 @@
   }
 }
 
-@keyframes middleReverse {
+@keyframes middleIn {
   0% {
     opacity: 0;
     width: 0em;
@@ -87,7 +87,7 @@
   }
 }
 
-@keyframes bottom {
+@keyframes bottomOut {
   0% {
     translate: 0 calc(var(--local-size) * 0.9);
   }
@@ -101,7 +101,7 @@
   }
 }
 
-@keyframes bottomReverse {
+@keyframes bottomIn {
   0% {
     translate: var(--local-translate);
     rotate: -45deg;
