@@ -1,8 +1,8 @@
 .icon {
   --iconColour: var(--white);
-  --local-size: 1.5em;
+  --local-size: 1em;
   --local-translate: 0 calc(var(--local-size) / 2.2);
-  --local-duration: 0.4s;
+  --local-duration: 0.3s;
   --local-name: top;
 
   width: var(--local-size);
