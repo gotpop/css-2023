@@ -1,14 +1,7 @@
 import * as React from 'react'
-import { MouseEventHandler, useEffect, useRef } from 'react'
-import { IconType } from 'react-icons'
+import { useEffect, useRef } from 'react'
+import { IButtonIcon } from 'types'
 import styles from './ButtonIcon.module.css'
-
-interface IButtonIcon {
-  content: string
-  properties?: { local: string; global: string }[]
-  icon?: IconType
-  doClick?: MouseEventHandler<HTMLButtonElement>
-}
 
 export default function ButtonIcon({
   content = 'Click',
