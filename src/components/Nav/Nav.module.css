@@ -20,9 +20,5 @@
     &:hover {
       background-color: var(--accent);
     }
-    
-    @media (--ipad) {
-      align-items: center;
-    }
   }
 }
