@@ -48,7 +48,9 @@
   --timing: 0.4s;
 
   --menu-side-width: 250px;
-  --menu-side-offset: -250px;
+  --menu-side-offset: calc(
+    var(--menu-side-width) - (var(--menu-side-width) * 2)
+  );
   --menu-open: 0px;
   --menu-closed: var(--menu-side-offset);
   --menu-state: var(--menu-closed);
