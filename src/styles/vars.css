@@ -33,7 +33,7 @@
   --size-s-3: calc(var(--size-s-2) / var(--scale));
 
   --textOpacity: 0.9;
-  --font-primary: "Roboto Flex";
+  --font-primary: "RobotoFlex";
   --font-fallback: " Arial, Helvetica, sans-serif";
 
   --grid-columns: 1;
