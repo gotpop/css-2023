@@ -1,20 +1,19 @@
 .icon {
   --iconColour: var(--white);
-  --local-size: 2em;
+  --local-size: 1.5em;
   --local-translate: 0 calc(var(--local-size) / 2.2);
   --local-duration: .4s;
   --local-name: top;
 
   width: var(--local-size);
   height: var(--local-size);
-  background: red;
   position: relative;
   display: flex;
   justify-content: center;
 
   & span {
-    background-color: var(--white);
-    height: calc(var(--local-size) / 10);
+    background-color: var(--hwb-grape-4);
+    height: calc(var(--local-size) / 6);
     width: var(--local-size);
     display: flex;
     border-radius: 0.25em;
@@ -25,28 +24,31 @@
     animation-fill-mode: forwards;
     animation-timing-function: linear;
   }
-
+  
   & .top {
     animation-name: topReverse;
     
     @nest [liam*="true"] & {
       animation-name: top;
+      background-color: var(--error);
     }
   }
-
+  
   & .middle {
     animation-name: middleReverse;
     translate: 0 calc(var(--local-size) * 0.45);
     
     @nest [liam*="true"] & {
+      background-color: var(--error);
       animation-name: middle;
     }
   }
-
+  
   & .bottom {
     animation-name: bottomReverse;
     
     @nest [liam*="true"] & {
+      background-color: var(--error);
       animation-name: bottom;
     }
   }
