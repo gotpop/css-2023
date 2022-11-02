@@ -3,9 +3,10 @@ import { useContext, useRef } from 'react'
 import styles from './Trigger.module.css'
 import ColumnContext from '@context/MenuContext'
 import { set } from '@utils/setPropsOnRoot'
+import TriggerIcon from '@components/TriggerIcon'
 
 export default function Trigger() {
-  const button = useRef(null)
+  const trigger = useRef(null)
   const { menu, setMenu } = useContext(ColumnContext)
 
   const handleClick = () => {
@@ -21,7 +22,8 @@ export default function Trigger() {
   }
 
   return (
-    <button onClick={handleClick} className={styles.button} ref={button}>
+    <button onClick={handleClick} className={styles.trigger} ref={trigger}>
+      <TriggerIcon menuState={menu}/>
       {!menu.open && <span>Open Menu</span>}
       {menu.open && <span>Close Menu</span>}
     </button>

@@ -1,0 +1,141 @@
+.icon {
+  --iconColour: var(--white);
+  --local-size: 2em;
+  --local-translate: 0 calc(var(--local-size) / 2.2);
+  --local-duration: .4s;
+  --local-name: top;
+
+  width: var(--local-size);
+  height: var(--local-size);
+  background: red;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  & span {
+    background-color: var(--white);
+    height: calc(var(--local-size) / 10);
+    width: var(--local-size);
+    display: flex;
+    border-radius: 0.25em;
+    transform-origin: center;
+    position: absolute;
+    top: 0;
+    animation-duration: var(--local-duration);
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+
+  & .top {
+    animation-name: topReverse;
+    
+    @nest [liam*="true"] & {
+      animation-name: top;
+    }
+  }
+
+  & .middle {
+    animation-name: middleReverse;
+    translate: 0 calc(var(--local-size) * 0.45);
+    
+    @nest [liam*="true"] & {
+      animation-name: middle;
+    }
+  }
+
+  & .bottom {
+    animation-name: bottomReverse;
+    
+    @nest [liam*="true"] & {
+      animation-name: bottom;
+    }
+  }
+}
+
+@keyframes top {
+  0% {
+    translate: 0 0em;
+  }
+  50% {
+    rotate: 0deg;
+    translate: var(--local-translate);
+  }
+  100% {
+    rotate: 45deg;
+    translate: var(--local-translate);
+  }
+}
+
+@keyframes topReverse {
+  0% {
+    rotate: 45deg;
+    translate: var(--local-translate);
+  }
+  50% {
+    rotate: 0deg;
+    translate: var(--local-translate);
+  }
+  100% {
+    translate: 0 0em;
+  }
+}
+
+@keyframes middle {
+  0% {
+    width: var(--local-size);
+  }
+
+  50% {
+    opacity: 1;
+    width: 0em;
+  }
+
+  100% {
+    opacity: 0;
+    width: 0em;
+  }
+}
+
+@keyframes middleReverse {
+  0% {
+    opacity: 0;
+    width: 0em;
+  }
+
+  50% {
+    opacity: 1;
+    width: 0em;
+  }
+
+  100% {
+    width: var(--local-size);
+  }
+}
+
+@keyframes bottom {
+  0% {
+    translate: 0 calc(var(--local-size) * 0.9);
+  }
+  50% {
+    rotate: 0deg;
+    translate: var(--local-translate);
+  }
+  100% {
+    translate: var(--local-translate);
+    rotate: -45deg;
+  }
+}
+
+@keyframes bottomReverse {
+  0% {
+    translate: var(--local-translate);
+    rotate: -45deg;
+  }
+  50% {
+    rotate: 0deg;
+    translate: var(--local-translate);
+  }
+  100% {
+    translate: 0 calc(var(--local-size) * 0.9);
+  }
+}
