@@ -8,12 +8,27 @@
   padding: var(--padding);
   border-radius: var(--radius-lg);
 
+  @media (--ipad) {
+    grid-column: span var(--grid-columns);
+  }
+
+  & h2 {
+    margin: 0 0 calc(var(--textMB) * 2) 0;
+
+    &::after {
+      content: "";
+      display: flex;
+      height: 1px;
+      width: calc(100% - 1rem);
+      margin: 0 0.5rem;
+      background-color: currentColor;
+      opacity: 0.3;
+      translate: 0 0.33em;
+    }
+  }
+
   & p {
     margin: 0 0 calc(var(--textMB) * 2) 0;
     opacity: var(--textOpacity);
-  }
-
-  @media (--ipad) {
-    grid-column: span var(--grid-columns);
   }
 }
